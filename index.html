@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-step Form</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Your CSS file -->
+</head>
+<body>
+
+
+
+    
+
+      
+
+
+  <div id="formContainer">
+
+
+
+    <div class="navbar">
+        <div class="nav-item active">Step 1</div>
+        <div class="nav-item">Step 2</div>
+        <div class="nav-item">Step 3</div>
+      </div>
+
+
+
+    <div id="step1" class="step">
+      <h2>Step 1: Personal Information</h2>
+      <input type="text" id="name" placeholder="Name">
+      
+      <span id="nameError" class="error"></span><br>
+      <input type="text" id="email" placeholder="Email">
+      <span id="emailError" class="error"></span><br>
+      <input type="text" id="phone" placeholder="Phone">
+      <span id="phoneError" class="error"></span><br>
+      <button id="next1">Next</button>
+    </div>
+    <div id="step2" class="step">
+      <h2>Step 2: Address Information</h2>
+      <input type="text" id="address1" placeholder="Address Line 1">
+      <span id="address1Error" class="error"></span><br>
+      <input type="text" id="address2" placeholder="Address Line 2">
+      <input type="text" id="city" placeholder="City">
+      <span id="cityError" class="error"></span><br>
+      <input type="text" id="state" placeholder="State">
+      <span id="stateError" class="error"></span><br>
+      <input type="text" id="zip" placeholder="Zip Code">
+      <span id="zipError" class="error"></span><br>
+      <button id="next2">Next</button>
+      <button id="back2">Back</button>
+    </div>
+    <div id="step3" class="step">
+      <h2>Step 3: Confirmation</h2>
+      <p id="confirmName"></p>
+      <p id="confirmEmail"></p>
+      <p id="confirmPhone"></p>
+      <p id="confirmAddress1"></p>
+      <p id="confirmAddress2"></p>
+      <p id="confirmCityStateZip"></p>
+      <button id="submit">Submit</button>
+      <button id="back3">Back</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script> 
+  <script src="navigation.js"></script><!-- Your JavaScript file -->
+</body>
+</html>
